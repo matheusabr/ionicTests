@@ -30,4 +30,19 @@ export class HomePage {
     this.navCtrl.push('SubjectsPage');
   }
 
+  /**
+   * Go to SubjectsPage using Lazy Loading concept
+   * and passing an object as params
+   */
+  gotoSubjectsPageWithParams() {
+    this.navCtrl.push('SubjectsPage', {
+      info: {
+        name: 'Lemon School',
+        type: 'High Sool',
+        units: 4,
+        hasTheater: true
+      }
+    });
+  }
+
 }
