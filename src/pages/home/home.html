@@ -11,4 +11,10 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+
+  <button ion-button block [navPush]="studentsPage">Go to Students</button>
+
+  <button ion-button block color="secondary" (click)="gotoTeachersPage()">Go to Teachers</button>
+
+  <button ion-button block outline color="danger" (click)="gotoSubjectsPage()">Go to Subjects</button>
 </ion-content>
