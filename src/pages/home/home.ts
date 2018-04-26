@@ -4,6 +4,8 @@ import { NavController } from 'ionic-angular';
 import { StudentsPage } from './../students/students';
 import { TeachersPage } from './../teachers/teachers';
 
+import { SCHOOL } from './../../mocks/school.mock';
+
 
 @Component({
   selector: 'page-home',
@@ -36,12 +38,7 @@ export class HomePage {
    */
   gotoSubjectsPageWithParams() {
     this.navCtrl.push('SubjectsPage', {
-      info: {
-        name: 'Lemon School',
-        type: 'High Sool',
-        units: 4,
-        hasTheater: true
-      }
+      info: SCHOOL
     });
   }
 
