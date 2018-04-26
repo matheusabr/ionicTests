@@ -14,8 +14,15 @@ import { SCHOOL } from './../../mocks/school.mock';
 export class HomePage {
   studentsPage = StudentsPage;
 
+  todayISO: string;
+
   constructor(public navCtrl: NavController) {
 
+  }
+
+  ionViewDidLoad() {
+    let date = new Date();
+    this.todayISO = date.toISOString();
   }
 
   /**
