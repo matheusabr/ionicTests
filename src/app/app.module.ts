@@ -5,6 +5,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { AutoCompleteModule } from 'ionic2-auto-complete';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { StudentsPage } from '../pages/students/students';
@@ -21,7 +23,8 @@ import { TeachersPage } from '../pages/teachers/teachers';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    PipesModule
+    PipesModule,
+    AutoCompleteModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
